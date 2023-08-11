@@ -1,0 +1,135 @@
+
+/*-----REMOVE ALL PAGE TITLES-------*/
+
+.post-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    display: none;
+   }
+
+
+/*-----REMOVE LARGE GAP ABOVE WHERE TITLES WERE REMOVED--------*/
+
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+    margin: 0 0 0.5em;   
+    font-family: 'Open Sans', sans-serif;
+    line-height: 120%;
+}
+
+/*-----REMOVE LARGE GAP ABOVE "BUY NOW" BUTTON WIDGET ON WATER PAGE--------*/
+.ow-button-base:before {
+  content: '';
+  display: block;
+  margin-top: -175px;
+  text-decoration: none;
+}
+
+.main-menu .current-menu-item > a { 
+	color: #FFF;
+	background: #c0af00; 
+}
+
+.main-content {
+    padding-top: 1.5em;
+}
+
+.cart .item {
+    vertical-align: top;
+}
+
+.cart .info {
+    margin: 0.25em 0;
+}
+
+.cart .order {
+    margin: 0.25em 0;
+    
+}
+
+.cart .order label {
+    display: inline;
+}
+
+.cart .group {
+    vertical-align: top;
+    margin: 1em 0;
+}
+
+.main-content .cart input[type="text"],
+.main-content .cart input[type="tel"],
+.main-content .cart input[type="url"],
+.main-content .cart input[type="password"] {
+    display: inline-block;
+    width: auto;
+}
+
+
+.main-content .cart input[type="number"] {
+    display: inline-block;
+    width: 5em;
+}
+
+.main-content .cart textarea {
+    width: 95%;
+}
+
+#txt-notes {
+    height: 6em;
+}
+
+#summary {
+    margin-top: 0.5em;
+    border-top: 1px solid #ddd;
+    padding-top: 1.5em;
+}
+
+.page-contact .main-content .address {
+    margin: 1em 0;
+}
+
+#results {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.4;
+    font-size: 76%;
+}
+
+.post-content input[type=submit][disabled],
+.post-content input[type=button][disabled],
+.post-content input[type=submit][disabled]:hover,
+.post-content input[type=button][disabled]:hover,
+.post-content input[type=submit][disabled]:focus,
+.post-content input[type=button][disabled]:focus {
+    background-color: #aaa;
+    color: white;
+    cursor: auto;
+}
+
+@media (min-width: 440px) {
+    .cart .item {
+        display: inline-block;
+        width: 45%;
+        margin: 1em 2.2%;
+    }
+    
+    .cart .group {
+        display: inline-block;
+        width: 30%;
+        margin: 1em 1%;
+        box-sizing: border-box;
+    }
+    
+    .cart .group.notes {
+        width: 63%;
+    }
+    
+    .page-contact .main-content .address {
+        display: inline-block;
+        width: 10em;
+        margin: 0 0 1em;
+    }
+}
