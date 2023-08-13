@@ -364,7 +364,184 @@
       </form>
     </div>
     <!-- /mobile-menu-container -->
- 
+    <div class="content">
+      <div
+        class="post single post-255 page type-page status-publish hentry no-featured-image"
+      >
+        <!-- /post-header section -->
+        <div class="post-content section-inner">
+          <section class="main-content">
+            <form class="cart" id="cart-hplus">
+              <div class="item">
+                <h2>H+ Basketball Sneakers</h2>
+                <p>Run faster, jump higher.</p>
+
+                <div class="info">
+                  <span>Price: $90/pair</span>
+                </div>
+
+                <div class="order">
+                  <label for="txt-q-bball">Quantity desired:</label>
+                  <input
+                    type="number"
+                    min="0"
+                    id="txt-q-bball"
+                    size="3"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+
+              <div class="item">
+                <h2>H+ ACTIVE Jersey</h2>
+                <p>Sweat harder, wick better.</p>
+
+                <div class="info">
+                  <span>Price: $25/each</span>
+                </div>
+
+                <div class="order">
+                  <label for="txt-q-jersey">Quantity desired:</label>
+                  <input
+                    type="number"
+                    min="0"
+                    id="txt-q-jersey"
+                    size="3"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+
+              <div class="item">
+                <h2>H+ Power Supplements</h2>
+                <p>Get healthier, get smarter.</p>
+
+                <div class="info">
+                  <span>Price: $30/bottle</span>
+                </div>
+
+                <div class="order">
+                  <label for="txt-q-power">Quantity desired:</label>
+                  <input
+                    type="number"
+                    min="0"
+                    id="txt-q-power"
+                    size="3"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+
+              <div id="summary">
+                <h2>Estimate Order</h2>
+
+                <div class="group state">
+                  <label for="s-state">State (required):</label>
+                  <select id="s-state">
+                    <option value="">- select -</option>
+                    <option value="CA">California (7.5% tax)</option>
+                    <option value="IL">Illinois</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="PA">Pennsylvania</option>
+                  </select>
+                </div>
+
+                <div class="group method">
+                  <label for="r-method-pickup">Shipping and Handling:</label
+                  ><br />
+                  <input
+                    type="radio"
+                    value="pickup"
+                    name="r_method"
+                    id="r-method-pickup"
+                    checked
+                  />
+                  <label for="r-method-pickup">Pickup (free)</label><br />
+
+                  <input
+                    type="radio"
+                    value="usps"
+                    name="r_method"
+                    id="r-method-usps"
+                  />
+                  <label for="r-method-usps">US Mail ($2/item)</label><br />
+
+                  <input
+                    type="radio"
+                    value="ups"
+                    name="r_method"
+                    id="r-method-ups"
+                  />
+                  <label for="r-method-ups">UPS ($3/item)</label>
+                </div>
+
+                <div class="group special">
+                  <label for="c-special-gift">Special:</label><br />
+                  <input
+                    type="checkbox"
+                    value="YES"
+                    name="c-special-gift"
+                    id="c-special-gift"
+                  />
+                  <label for="c-special-gift"
+                    >This is a gift (include a card)</label
+                  ><br />
+
+                  <input
+                    type="checkbox"
+                    value="YES"
+                    name="c-special-email"
+                    id="c-special-email"
+                  />
+                  <label for="c-special-email"
+                    >Sign up for the H+ mailing list</label
+                  ><br />
+
+                  <input
+                    type="checkbox"
+                    value="YES"
+                    name="c-special-recipes"
+                    id="c-special-recipes"
+                  />
+                  <label for="c-special-recipes"
+                    >Include H+ recipes (free!)</label
+                  >
+                </div>
+
+                <div class="group notes">
+                  <label for="txt-notes">Other notes:</label><br />
+
+                  <textarea
+                    name="txt-notes"
+                    id="txt-notes"
+                    rows="2"
+                    placeholder="Any other comments (does not affect estimate)"
+                  ></textarea>
+                </div>
+
+                <div class="group calc">
+                  <p>
+                    <label for="btn-estimate">Click to estimate:</label><br />
+                    <input
+                      type="submit"
+                      value="Estimate Total"
+                      id="btn-estimate"
+                    />
+                    <input type="text" id="txt-estimate" placeholder="$0.00" />
+                  </p>
+
+                  <div id="results"></div>
+                </div>
+              </div>
+            </form>
+          </section>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!-- /post -->
+    
+    </div>
+    <!-- /content -->
  
 
     <script src="script.js"></script>
