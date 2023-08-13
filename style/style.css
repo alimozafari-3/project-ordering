@@ -291,3 +291,168 @@ color: #fff;
 /* -------------------------------------------------------------------------------- */
 /*	4. Navigation
 /* -------------------------------------------------------------------------------- */
+
+.main-menu { margin-top: 2px; }
+
+.main-menu li {
+	float: left;
+	margin: 0 10px 0 0;
+	position: relative;
+}
+
+.main-menu > li:last-child { margin-right: 0; }
+
+.main-menu a {
+	display: block;
+	padding: 13px 15px;
+	font-size: 0.775em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #222;
+}
+
+.main-menu > li > a { border-radius: 3px; }
+
+.main-menu > .has-children > a,
+.main-menu > .menu-item-has-children > a { padding-right: 33px; position: relative; }
+
+.main-menu > .has-children > a::after,
+.main-menu > .menu-item-has-children > a::after {
+	content: "";
+	display: block;
+	border: 5px solid transparent;
+	border-top-color: #999;
+	position: absolute;
+	z-index: 1001;
+	right: 16px;
+	top: 50%;
+	margin-top: -2px;
+}
+
+.main-menu > li:hover > a { 
+	color: #FFF;
+	background: #CA2017; 
+}
+
+.main-menu > .has-children:hover > a::after,
+.main-menu > .menu-item-has-children:hover > a::after { border-top-color: #fff; }
+
+
+/* search toggle */
+
+
+.main-menu a.search-toggle {
+	padding: 0;
+	height: 40px;
+	width: 40px;
+	background: url(images/icons/1x/spyglass-d.png) no-repeat center;
+	background-size: 20px auto;
+}
+
+.main-menu a.search-toggle:hover { 
+	background: url(images/icons/1x/spyglass-d.png) no-repeat center; 
+	background-size: 20px auto;
+}
+
+
+/* drop-down menu */
+
+
+.main-menu ul { 
+	position: absolute;
+	padding-top: 20px;
+	margin-left: -110px;
+	z-index: 150;
+	opacity: 0;
+	top: 45px;
+	left: -9999px;
+	-webkit-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.main-menu > ul { top: 30px; }
+
+.main-menu ul:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #222;
+	left: 50%;
+	margin-left: -10px;
+	top: 1px;
+}
+
+.main-menu > li:hover > ul { 
+	opacity: 1;
+	top: 40px; 
+	left: 50%;
+}
+
+.main-menu ul li { 
+	margin: 0; 
+	float:none; 
+	display: block; 
+}
+
+.main-menu ul a { 
+	padding: 20px;
+	width: 220px;
+	background: #222;
+	color: #FFF;
+	border-bottom: 0;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0;
+	font-size: 0.75em;
+	line-height: 120%;
+	text-transform: none;
+}
+
+.main-menu ul a:hover {
+	color: #FFF;
+	background: #CA2017;
+}
+
+.main-menu ul > li:first-child > a { border-radius: 6px 6px 0 0; }
+.main-menu ul > li:last-child > a { border-radius: 0 0 6px 6px; }
+
+
+/* deep down */
+
+.main-menu ul ul {
+	display: block;
+	padding-top: 0;
+	margin-top: -42px;
+	padding-right: 20px;
+	margin-left: -235px;
+	left: 0;
+	-webkit-transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
+}
+
+.main-menu ul ul:after {
+	border: 10px solid transparent;
+	border-left-color: #222;
+	right: 0px;
+	left: auto;
+	margin-top: 18px;
+}
+
+.main-menu ul li:hover ul { 
+	opacity: 1; 
+	margin-top: -47px;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	5. Main Content
+/* -------------------------------------------------------------------------------- */
