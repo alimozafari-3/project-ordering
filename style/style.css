@@ -749,3 +749,190 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 /* -------------------------------------------------------------------------------- */
 /*	7. Post Content
 /* -------------------------------------------------------------------------------- */
+
+.post-content {
+	font-family: 'Crimson Text', 'Times New Roman', Times, serif;
+	font-size: 1.25em;
+}
+
+.post-content a:hover { text-decoration: underline; }
+
+.post-content p,
+.post-content blockquote,
+.post-content ul,
+.post-content ol,
+.post-content li,
+.post-content address,
+.post-content dl,
+.post-content .wp-caption,
+.post-content pre {
+	line-height: 160%;
+	margin-bottom: 1.3em;
+}
+
+.post-content > *:first-child { margin-top: 0; }
+.post-content *:last-child { margin-bottom: 0; }
+
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+	margin: 60px 0 30px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 120%;
+}
+
+.post-content h1 { 
+	font-size: 1.6em; 
+	font-weight: 700;
+}
+
+.post-content h2 { 
+	font-size: 1.4em; 
+	font-weight: 700;
+}
+
+.post-content h3 { font-size: 1.25em; }
+.post-content h4 { font-size: 1.1em; }
+.post-content h5 { font-size: 1em; }
+
+.post-content h6 {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.post-content h1+h1, .post-content h1+h2, .post-content h1+h3, .post-content h1+h4, .post-content h1+h5, .post-content h1+h6,
+.post-content h2+h1, .post-content h2+h2, .post-content h2+h3, .post-content h2+h4, .post-content h2+h5, .post-content h2+h6,
+.post-content h3+h1, .post-content h3+h2, .post-content h3+h3, .post-content h3+h4, .post-content h3+h5, .post-content h3+h6,
+.post-content h4+h1, .post-content h4+h2, .post-content h4+h3, .post-content h4+h4, .post-content h4+h5, .post-content h4+h6,
+.post-content h5+h1, .post-content h5+h2, .post-content h5+h3, .post-content h5+h4, .post-content h5+h5, .post-content h5+h6,
+.post-content h6+h1, .post-content h6+h2, .post-content h6+h3, .post-content h6+h4, .post-content h6+h5, .post-content h6+h6 {
+	margin-top: 25px;
+}
+
+.post-content blockquote p { 
+	font-size: 1.1em;
+	text-align: center; 
+	font-style: italic;
+}
+
+.post-content blockquote:before,
+.post-content blockquote:after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 2px;
+	background: #ddd;
+	margin: 40px auto;
+}
+
+.post-content cite {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.65em;
+	line-height: 140%;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.post-content cite:before { content: "— "; }
+
+.post-content blockquote cite {
+	display: block;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.post-content blockquote cite em { font-style: italic; font-weight: bold; }
+
+em, q {  font-style: italic;  }
+
+.post-content strong em,
+.post-content em strong {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.post-content big { font-size: 1.25em; }
+
+abbr, acronym { cursor: help; }
+
+.post-content code, 
+.post-content kbd,
+.post-content pre {
+	font-size: 0.85em;
+	background: #EEE;
+	font-family: Menlo, Monaco, monospace;
+}
+
+.post-content kbd,
+.post-content code {
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.post-content dl { line-height: 160%; }
+
+.post-content dl dt { font-weight: bold; }
+
+.post-content hr {
+	display: block;
+	width: 100px;
+	height: 2px;
+	background: #ddd;
+	margin: 40px auto;
+	border: none;
+}
+
+.post-content ul {
+	list-style: disc;
+	margin-left: 1.5em;
+}
+
+.post-content ul ul { list-style: circle; }
+.post-content ul ul ul { list-style: square; }
+
+.post-content ol {
+	list-style: decimal;
+	margin-left: 1.5em;
+}
+
+.post-content ol ol { list-style: lower-alpha; }
+.post-content ol ol ol {
+	list-style: lower-roman;
+}
+
+.post-content ul ul,
+.post-content ul ol,
+.post-content ol ul,
+.post-content ol ol {
+	margin-bottom: 0;
+}
+
+.post-content li {
+	margin-bottom: 0.5em;
+}
+
+.post-content ol > li:last-child,
+.post-content ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.post-content address {
+	padding: 3% 3.5%;
+	background: #f1f1f1;
+}
+
+.post-content pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	line-height: 140%;
+	padding: 2% 2.5%;
+	background: #FAFAFA;
+	border: 1px solid #DDD;
+	color: #333;
+	font-size: 0.7em;
+}
