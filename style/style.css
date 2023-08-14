@@ -456,3 +456,296 @@ color: #fff;
 /* -------------------------------------------------------------------------------- */
 /*	5. Main Content
 /* -------------------------------------------------------------------------------- */
+
+
+.post { position: relative; }
+
+.posts .post.has-featured-image { min-height: 266px; }
+
+/* featured media */
+
+.featured-media { 
+	position: relative;
+	display: block;
+	width: 100%;
+	max-height: 682px;
+}
+
+a.featured-media:hover { opacity: 0.75; }
+
+.featured-media > img { 
+	visibility: hidden; 
+	display: block;
+	margin: 0 auto;
+}
+
+.media-caption-container {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	left: 5%;
+	text-align: center;
+}
+
+.media-caption {
+	display: inline-block;
+	padding: 9px 12px;
+	border-radius: 3px;
+	background: #444;
+	background: rgba(17,17,17,0.5);
+	font-size: 0.8em;
+	line-height: 120%;
+	font-weight: 400;
+	font-style: italic;
+	color: #fff;
+}
+
+.media-caption:hover { background-color: rgba(17,17,17,0.75); }
+
+/* post header */
+
+.post-header { display: block; }
+
+a.post-header { position: static; }
+a.featured-media + a.post-header { position: absolute; }
+
+a.post-header {
+	background: #BFBFBF;
+	background: rgba(17,17,17,0.35);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #FFF;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+a.post-header:hover { 
+	background: #333;
+	background: rgba(17,17,17,0.75); 
+	color: #FFF; 
+}
+
+.post.no-featured-image a.post-header { position: static; }
+.post.no-featured-image a.post-header:hover { background: #333; }
+
+a.post-header:hover .post-title { color: #CA2017; }
+
+.post-meta-top { 
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-align: center; 
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+.post-meta-top .sep { 
+	color: #CCC;
+	margin: 0px 5px; 
+	font-weight: 400;
+}
+
+a.post-header .post-meta-top .sep { 
+	color: #fff;
+	color: rgba(255,255,255,0.5); 
+	text-shadow: none; 
+}
+
+.sticky .post-meta-top { display: block; }
+
+.post-title {
+	font-family: 'Abril Fatface', serif;
+	font-size: 3em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+a.post-header .post-title { 
+	max-width: 90%; 
+	margin-left: auto; 
+	margin-right: auto; 
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	6. Single Post
+/* -------------------------------------------------------------------------------- */
+
+
+.single .post,
+.error404 .post,
+.page .single.post { padding-bottom: 100px; }
+
+.single .featured-media {
+	z-index: 101;
+	position: relative;
+}
+
+.single .post-header {
+	position: static;
+	background: none;
+}
+
+.single .post-meta-top,
+.single .post-meta-top a {
+	color: #666;
+}
+
+.single .post-meta-top a:hover { color: #CA2017; }
+
+.single .post-title,
+.single .post-meta-top { text-shadow: none; }
+
+.single .post-title a { color: #222; }
+.single .post-title a:hover { color: #CA2017; }
+
+
+/* page links */
+
+
+.page-links {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #666;
+}
+
+.page-links:before {
+	content: "";
+	display: block;
+	width: 48px;
+	height: 1px;
+	background: #ddd;
+	margin-bottom: 10px;
+}
+
+.page-links .sep {
+	color: #ccc;
+	margin: 0 5px;
+	font-weight: 400;
+}
+
+.page-links .sep:first-of-type { display: none; } 
+
+
+/* Post meta */
+
+
+.post-meta { 
+	margin-top: 80px; 
+	font-size: 14px;
+	color: #666;
+}
+
+.post-meta .meta-block {
+	padding-top: 12px;
+	border-top: 1px solid #ddd;
+}
+
+.meta-title {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	color: #767676;
+}
+
+.post-author-container { 
+	position: relative; 
+	min-height: 60px;
+}
+
+.post-author { width: 55%; float: left; }
+.post-cat-tags { width: 40%; float: right; }
+
+.post-author .avatar {
+	max-width: 60px;
+	height: auto;
+	border-radius: 999px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.post-author-inner { margin-left: 80px; }
+
+.post-author-inner h3 { 
+	font-size: 1.1em;
+	font-weight: 700; 
+}
+
+.post-author-inner h3 a { color: #333; }
+.post-author-inner h3 a:hover { color: #CA2017; text-decoration: none; }
+
+.post-author p {
+	margin-top: 8px;
+	line-height: 150%;
+	color: #444;
+}
+
+
+/* author links */
+
+
+.author-links { margin-top: 15px; }
+
+.author-links a {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-color: #aaa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px auto;
+	margin-left: 3px;
+	border-radius: 999px;
+	text-indent: -9999px;
+}
+
+.author-links a:first-child { margin-left: 0; }
+
+.author-links a.author-link-posts { background-image: url(images/icons/1x/archive-w.png); }
+.author-links a.author-link-website { background-image: url(images/icons/1x/home-w.png); }
+
+.author-links a:hover { background-color: #ca2017; }
+
+
+/* post cat tags */
+
+
+.post-cat-tags p { 
+	line-height: 120%;
+	margin-top: 12px; 
+	padding: 3px 0 4px 22px;
+	background: no-repeat left center;
+	background-size: 16px auto;
+}
+
+p.post-categories { background-image: url(images/icons/1x/folder-g.png); }
+p.post-tags { background-image: url(images/icons/1x/tag-g.png); }
+p.post-nav-prev { background-image: url(images/icons/1x/prev-g.png); }
+p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
+
+.post-cat-tags p:first-child { margin-top: 0; }
+
+.post-cat-tags a { color: #666; }
+
+.post-nav:before {
+	content: "";
+	display: block;
+	width: 32px;
+	height: 1px;
+	margin: 20px 0;
+	background: #ddd;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	7. Post Content
+/* -------------------------------------------------------------------------------- */
