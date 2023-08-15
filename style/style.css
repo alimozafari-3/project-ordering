@@ -936,3 +936,118 @@ abbr, acronym { cursor: help; }
 	color: #333;
 	font-size: 0.7em;
 }
+
+/* Post media --------------------------------------- */
+
+
+.wp-caption,
+.post-content img {
+	max-width: 100%;
+}
+
+.post-content .alignleft,
+.post-content .alignright {
+	margin-bottom: 1.2em;
+	max-width: 400px;
+}
+
+.post-content .wp-caption { max-width: 100%; }
+
+.post-content .wp-caption img { display: block; }
+
+.post-content .wp-caption .alignleft,
+.post-content .wp-caption .alignright {
+	margin-bottom: 0;
+}
+
+.post-content .alignleft {
+	float: left;
+	margin-left: -100px;
+	margin-right: 1.5em;
+}
+
+.post-content .alignright {
+	float: right;
+	margin-right: -100px;
+	margin-left: 1.5em;
+}
+
+.post-content .aligncenter { 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.post-content .alignnone {
+	max-width: 940px;
+	margin: 30px -100px;
+}
+
+.post-content a.alignnone { width: 940px; }
+
+.post-content .aligncenter img,
+.post-content img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.post-content .wp-caption-text,
+.post-content .gallery-caption {
+	padding-top: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #888;
+	text-align: center;
+}
+
+.post-content .gallery-caption {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+
+/* Tables --------------------------------------- */
+
+
+.post-content table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.post-content tbody { 
+	border-top: 1px solid #eee; 
+    border-bottom: 1px solid #eee;
+}
+
+.post-content th,
+.post-content td {
+	padding: 2%;
+	margin: 0;
+	overflow: visible;
+	line-height: 120%;
+	border-bottom: 1px solid #eee;
+}
+
+.post-content tr:last-child td { border-bottom: none; }
+
+.post-content caption {
+	color: #444;
+	text-align: center;
+	padding: 2%;
+}
+
+.post-content thead {
+	vertical-align: bottom;
+	white-space: nowrap;
+}
+
+.post-content th {
+	font-weight: bold;
+	color: #444;
+}
+
+.post-content table tbody > tr:nth-child(odd) > td { background: #f9f9f9; }
