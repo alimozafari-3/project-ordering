@@ -1544,3 +1544,118 @@ li.comment {
 }
 
 .archive-nav a.post-nav-newer { float:right; }
+
+/* -------------------------------------------------------------------------------- */
+/*	10. Page & Page Templates
+/* -------------------------------------------------------------------------------- */
+
+
+.page .post-header { 
+	position: static; 
+}
+
+.page .post-edit-link {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+
+/* Archives template --------------------------------------- */
+
+
+.archive-container { margin-top: 80px; }
+
+.archive-container li { 
+	position: relative; 
+	border-bottom: 1px solid #eee;
+}
+
+.archive-container li:first-child { border-top: 1px solid #eee; }
+
+.archive-container a {
+	display: block;
+	padding: 16px 200px 16px 8px;
+	font-family: 'Crimson Text', 'Times New Roman', Times, serif;
+	font-size: 1.25em;
+	line-height: 120%;
+	color: #222;
+}
+
+.archive-container a span {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	margin-top: -7px;
+	color: #999;
+}
+
+.archive-container a:hover { background-color: #fcfcfc; color: #ca2017; }
+
+
+/* Single attachment --------------------------------------- */
+
+
+.single-attachment .attachment-post-image {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* Error 404 --------------------------------------- */
+
+
+.error404 .search-form,
+.search-no-results .search-form { margin-top: 25px; }
+
+
+/* Search --------------------------------------- */
+
+
+.search-no-results .post-content p { text-align: center; }
+
+.search-form { position: relative; }
+
+.search-form #s {
+	padding: 5% 20% 5% 5%;
+	width: 100%;
+	border: none;
+	background: #eee;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #444;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+.search-form #s:focus { outline: none; }
+
+.search-form .search-button {
+	width: 40px;
+	height: 40px;
+	background: url(images/icons/1x/spyglass-d.png) no-repeat center;
+	background-size: 20px auto;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	margin-top: -20px;
+	-webkit-appearance: none;
+	padding: 0;
+	border: none;
+	text-indent: -9999px;
+	opacity: 0.5;
+}
+
+.search-form .search-button:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
